@@ -61,7 +61,7 @@ public class MessageMapFormat extends MapFormat {
     }
 
     private void applyPattern(String mapPattern) {
-        Pattern c = Pattern.compile("\\$\\{([a-zA-Z][a-zA-Z0-9_]*(\\.[a-zA-Z][a-zA-Z0-9_]*)*(\\,(number|date|time|choice)*(\\,[#\\.0-9\\|<>YyMmDd]*)?)?)\\}");
+        Pattern c = Pattern.compile("\\$\\{([a-zA-Z][a-zA-Z0-9_]*(\\.[a-zA-Z][a-zA-Z0-9_]*)*(\\,(number|date|time|choice)*(\\,[#\\.0-9\\|<>YyMmDdHh]*)?)?)\\}");
         Matcher matcher = c.matcher(mapPattern);
         matcher.reset();
         StringBuffer stringBuffer = new StringBuffer();
