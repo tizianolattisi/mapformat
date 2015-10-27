@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.axiastudio</groupId>
+    <artifactId>mapformat</artifactId>
+    <version>1.0.0</version>
+    <name>MapFormat</name>
+    <description>A set of java.text.Format subclasses that instead positional notation uses tag names.</description>
+    <url>https://github.com/tizianolattisi/mapformat</url>
+
+    <licenses>
+        <license>
+            <name>The BSD 3-Clause License</name>
+            <url>http://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Tiziano Lattisi</name>
+            <email>tiziano@axiastudio.it</email>
+            <organization>AXIA Studio</organization>
+            <organizationUrl>http://www.axiastudio.com</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git@github.com:tizianolattisi/mapformat.git</connection>
+        <developerConnection>scm:git:git@github.com:tizianolattisi/mapformat.git</developerConnection>
+        <url>https://github.com/tizianolattisi/mapformat</url>
+    </scm>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+</project>
